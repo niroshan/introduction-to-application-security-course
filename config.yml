@@ -1,0 +1,16 @@
+title: Introduction to Application Security
+description: foundational level course for Advanced Security
+template:
+  repo: introduction-to-application-security-template
+  name: introduction-to-application-security
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
